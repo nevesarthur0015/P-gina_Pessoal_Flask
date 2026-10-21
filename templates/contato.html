@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}
+contato
+{% endblock %}
+
+{% block body %}
+
+<h2>Contatos:</h2>
+<div class="contato">
+    <ul>
+        <li>
+            <a target="_blank" href="https://github.com/nevesarthur0015">Github</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/_arthurgneves21/" target="_blank">Instagram</a>
+        </li>
+        <li>
+            <a href="mailto:neves.arthur@academico.ifpb.edu.br">E-mail</a>
+        </li>
+    </ul>
+</div>
+<h2>Outras páginas:</h2>
+<div class="contato">
+    <ul>
+        <li>
+            <a href="{{url_for('homepage')}}">Pessoal</a>
+        </li>
+        <li>
+            <a href="{{url_for('profissional')}}">Profissional</a>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}

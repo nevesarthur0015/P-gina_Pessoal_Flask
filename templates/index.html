@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Pessoal
+{% endblock %}
+
+{% block body %}
+ <div class="pessoal">
+    <img src="{{url_for('static', filename='imagens/minato.jpeg')}}">
+    <p>Nome: Arthur</p>
+    <p>Idade: 20</p>
+    <p>Altura: 166 cm</p>
+    </div>
+
+    <ul>
+        <li>
+            <a href="{{url_for('contato')}}">Contato</a>
+        </li>
+        <li>
+            <a href="{{url_for('profissional')}}">Profissional</a>
+        </li>
+    </ul>
+    {% endblock %}
+
+
